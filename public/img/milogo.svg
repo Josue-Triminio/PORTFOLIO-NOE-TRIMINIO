@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 5000 5000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:square;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+        <g transform="matrix(0.996557,0,0,1.01751,8.30893,-469.617)">
+            <ellipse cx="1902.47" cy="2249.34" rx="1424.08" ry="1394.99"/>
+        </g>
+        <g transform="matrix(1,0,0,1,-98.0425,-45.2157)">
+            <g transform="matrix(125.125,0,0,125.125,2528.33,2898.38)">
+            </g>
+            <text x="1576.13px" y="2898.38px" style="font-family:'Avenir-Black', 'Avenir', sans-serif;font-weight:800;font-size:125.125px;fill:white;">- WEB DESIGN -</text>
+        </g>
+        <g transform="matrix(0.933645,0,0,0.939514,131.828,-297.889)">
+            <ellipse cx="1902.47" cy="2249.34" rx="1424.08" ry="1394.99" style="fill:none;stroke:white;stroke-width:28.92px;"/>
+        </g>
+        <g transform="matrix(1.18048,0,0,0.923704,-985.66,-7.98015)">
+            <g transform="matrix(2050.48,0,0,2050.48,2015.07,2655.45)">
+            </g>
+            <text x="1303.55px" y="2655.45px" style="font-family:'BodoniOrnamentsITCTT', 'Bodoni Ornaments';font-size:2050.47px;fill:white;">J</text>
+        </g>
+        <g transform="matrix(0.916156,0,0,0.809253,-178.314,142.992)">
+            <path d="M1560.16,1404.53L1983.67,1404.53L2536.34,2216.51L2536.34,1404.53L2963.86,1404.53L2963.86,2872.3L2536.34,2872.3L1986.68,2066.33L1986.68,2872.3L1560.16,2872.3L1560.16,1404.53Z" style="fill:white;"/>
+        </g>
+        <g transform="matrix(-1.18048,0,0,0.927797,4818.39,3.70913)">
+            <g transform="matrix(2050.48,0,0,2050.48,2015.07,2655.45)">
+            </g>
+            <text x="1303.55px" y="2655.45px" style="font-family:'BodoniOrnamentsITCTT', 'Bodoni Ornaments';font-size:2050.47px;fill:white;">J</text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,46 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Header from '../components/Header.astro';
+import Nav from '../components/Nav.astro';
+import Titulo from '../components/Titulo.astro';
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="developer web portfolio" content="paginas web spa react javascript developer desarrollador frontend portfolio web">
+		<link rel="icon" type="image/svg+xml" href="/img/milogo.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700;900&display=swap" rel="stylesheet">
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="portfolio web developer-javascript portafolio">
+		<title>{title}</title>
+	</head>
+	<body class=" bg-gray-100 relative">
+
+		<Header />
+		<Titulo />
+		<Nav />
+		<slot />
+	</body>
+</html>
+
+
+<style is:global>
+	body{
+		font-family: 'Montserrat', sans-serif;
+		color: rgb(104, 104, 104);
+	}
+	p{
+		font-weight: 200;
+	}
+</style>
+
