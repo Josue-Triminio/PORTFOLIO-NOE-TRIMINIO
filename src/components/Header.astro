@@ -3,16 +3,20 @@
     const btn_menu2 = document.querySelector('.btn_menu2')
     const nav = document.querySelector('.nav')
     const nav_ul=document.querySelector('.nav_ul')
+    const header=document.querySelector('.header')
 
     btn_menu.addEventListener('click',()=>{
         nav.classList.toggle('w-[65%]')
         nav.classList.toggle('lg:w-[25%]')
         nav_ul.classList.add('opacity-[100%]')
+        header.classList.add('bg-black')
+        header.classList.remove('bg-gray-100')
         btn_menu2.classList.remove('opacity-0')
+        
     })
 </script>
 
-<header class=" w-full bg-gray-100 sticky top-0 flex justify-between items-center z-50">
+<header class="header w-full bg-gray-100 sticky top-0 flex justify-between items-center z-50">
     <a class=" ml-6" href="/" rel="noopener noreferrer"><img src="/img/milogo.svg" class=" w-16" alt="logo portfolio"></a>
     <button class="btn_menu mr-5 md:mr-10 flex items-center">
         <p class=" font-bold text-black">MENU</p>
@@ -24,9 +28,4 @@
 </header>
 
 
-<style>
-    header{
-        -webkit-box-shadow: 1px 5px 13px 0px rgba(160, 160, 160, 0.32); 
-        box-shadow: 1px 5px 13px 0px rgba(131, 131, 131, 0.32);
-    }
-</style>
+
