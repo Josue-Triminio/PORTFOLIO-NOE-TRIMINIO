@@ -1,67 +1,55 @@
-<script>
-    const tec_card=document.querySelectorAll('.tecnologias');
-
-    const observador= new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show')
-            }else{
-                entry.target.classList.remove('show')
-            }
-        })
-    },{
-        threshold:.7
-    })
-
-    tec_card.forEach(e => {
-        observador.observe(e)
-    });
-</script>
 
 
 
-<section class=" md:flex items-center justify-evenly md:gap-8 w-[80%] mx-auto ">
 
-    <section class="tecnologias mt-10 opacity-0">
-        <h3 class="text-4xl text-center mb-6">Stack </h3>
-        <div class="stack bg-white grid grid-cols-3 rounded-xl p-3">
-           <div class="flex flex-col items-center gap-3">
-                <img src="/img/icons/html.svg" class=" w-16" alt="html icon">
-                <img src="/img/icons/css.svg" class=" w-16" alt="css icon">
-                <img src="/img/icons/javascript.svg" class=" w-16" alt="javascript icon">
-           </div>
-           <div class="flex  flex-col items-center gap-3">
-                <img src="/img/icons/react.svg" class=" w-16" alt="react icon">
-                <img src="/img/icons/next.svg" class=" w-16" alt="netxjs icon">
-                <img src="/img/icons/astro.svg" class=" w-16" alt="astrojs icon">
-           </div>
-           <div class="flex flex-col items-center gap-3">
-                <img src="/img/icons/node.svg" class=" w-16" alt="nodejs icon">
-                <img src="/img/icons/mysql.svg" class=" w-20" alt="mysql icon">
-                <img src="/img/icons/mongo.svg" class=" w-26" alt="mongodb icon">
-           </div>
-        </div>
-    
+<section class="flex justify-around md:w-[80%] md:mx-auto">
+
+    <section class="tecnologias w-[95%] mx-auto p-5  md:w-auto md:m-0">
+        <h3 class="text-4xl text-center mt-3 mb-6 md:mt-8">SKILLS </h3>
+       <div class="flex  flex-col flex-wrap shadow rounded-md p-5">
+            <div class="flex justify-center items-center gap-10 p-5 ">
+                <img src="/img/icons/html.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/css.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/javascript.svg" class="w-12" alt="icono html">
+            </div>
+            <div class="flex flex-wrap item-center gap-10 p-5 border-t">
+                <img src="/img/icons/react.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/vite.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/next.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/astro.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/tailwind.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/sass.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/bootstrap.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/material.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/git.svg" class="w-18" alt="icono html">
+                <img src="/img/icons/github.svg" class="w-12" alt="icono html">
+            </div>
+            <div class="flex flex-wrap item-center gap-10 p-5 border-t">
+                <img src="/img/icons/node.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/mysql.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/mongo.svg" class="w-18" alt="icono html">
+                <img src="/img/icons/strapi.svg" class="w-16" alt="icono html">
+            </div>
+            <div class="flex flex-wrap item-center gap-10 p-5 border-t">
+                <img src="/img/icons/designer.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/photo.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/illustrator.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/ps.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/sketch.svg" class="w-18" alt="icono html">
+            </div>
+            <div class="flex flex-wrap item-center justify-center gap-10 p-5 border-t">
+                <img src="/img/icons/windows.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/mac.svg" class="w-12" alt="icono html">
+                <img src="/img/icons/linux.svg" class="w-18" alt="icono html">
+            </div>
+       </div>
     </section>
-    <section class="tecnologias mt-10 opacity-0 ">
-        <h3 class="text-3xl text-center mb-6">Mas Conocimientos</h3>
-        <div class="stack bg-white grid grid-cols-3 rounded-xl p-3">
-           <div class="flex flex-col items-center gap-3">
-                <img src="/img/icons/git.svg" class=" w-30" alt="git icon">
-                <img src="/img/icons/github.svg" class=" w-16" alt="github icon">
-                <img src="/img/icons/tailwind.svg" class=" w-16" alt="tailwindcss icon">
-           </div>
-           <div class="flex flex-col items-center gap-3">
-                <img src="/img/icons/illustrator.svg" class=" w-16" alt="adobe illustrator icon">
-                <img src="/img/icons/ps.svg" class=" w-16" alt="adobe photoshop icon">
-                <img src="/img/icons/sketch.svg" class=" w-26" alt="sketch icon">
-           </div>
-           <div class="flex flex-col items-center gap-3">
-                <img src="/img/icons/mac.svg" class=" w-16" alt="macos icon">
-                <img src="/img/icons/linux.svg" class=" w-30" alt="linux icon">
-                <img src="/img/icons/windows.svg" class=" w-16" alt="windows icon">
-           </div>
-        </div>
+    <section class="tecnologias mt-10 p-5 hidden md:flex md:flex-col md:gap-4">
+        <h3 class="text-4xl text-center mb-6 ">Mis Conocimientos</h3>
+        <p class="text-xl font-semibold">Estos son los conocimientos que e obtenido en el transcurso de mi aprendizaje.</p>
+        <p><span class="font-semibold">Conocimientos base:</span> HTML, CCSS y JAVASCRIPT.</p>
+        <p><span class="font-semibold">Librerias y frameworks:</span> ASTRO, REACT, NEXT, VITE, TAILWIND y SASS .</p>
+        <p><span class="font-semibold">Conocimientos adicionales:</span> INFORMATICA, AFFINITY PHOTO,  AFFINITY DESIGNER, PHOTOSHOP, ILLUSTRATOR  .</p>
     </section>
 </section>
 
@@ -69,13 +57,6 @@
 
 
 <style>
-    .stack{
-        margin: 0 auto;
-        -webkit-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-        -moz-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-        box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-    }
-
     .show{
         transition: all .4s ease;
         opacity: 1;
