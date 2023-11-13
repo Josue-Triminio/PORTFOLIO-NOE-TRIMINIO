@@ -6,7 +6,6 @@ interface Props {
 const { title } = Astro.props;
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
-import Titulo from '../components/Titulo.astro';
 ---
 
 <!doctype html>
@@ -24,10 +23,9 @@ import Titulo from '../components/Titulo.astro';
 		<meta name="description" content="portfolio web developer-javascript portafolio">
 		<title>{title}</title>
 	</head>
-	<body class=" bg-gray-50 relative text-[#273036]">
+	<body class=" bg-gray-50 relative text-[#273036] ">
 
 		<Header />
-		<Titulo />
 		<Nav />
 		<slot />
 	</body>
