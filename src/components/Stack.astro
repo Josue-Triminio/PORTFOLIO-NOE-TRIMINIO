@@ -13,9 +13,9 @@
 
 
 <h2 class="h2_skills opacity-0 text-2xl p-20 text-center border-b md:text-4xl">MIS CONOCIMIENTOS 👨🏻‍💻</h2>
-<section class="skills opacity-0 flex justify-around md:w-[80%] md:mx-auto ">
-    <section class="w-[95%] mx-auto p-5  md:w-auto md:m-0">
-       <div class="flex  flex-col flex-wrap shadow rounded-md p-5">
+<section class="skills opacity-0 flex justify-around md:w-[80%] md:mx-auto gap-5">
+    <section class="w-[95%] mx-auto p-5 md:w-auto md:m-0 ">
+       <div class="flex  flex-col flex-wrap rounded-md p-5 shadow-lg bg-white ">
             <div class="flex justify-center items-center gap-10 p-5 ">
                 <img src="/img/icons/html.svg" class="w-12" alt="icono html">
                 <img src="/img/icons/css.svg" class="w-12" alt="icono css">
@@ -55,8 +55,31 @@
 
 
 <style>
+  
     .showsection{
        transition: all .8s ease-in-out;
        opacity: 100%;
     }
+
+    .skills{
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 10% cover 30%;
+    }
+
+    @keyframes fade {
+        0%{
+            opacity: 0;
+            translate: 20 100px;
+            scale: .5;
+            transition: all .3s ease-in-out;
+        }
+        100%{
+            opacity: 1;
+            translate: 0 0;
+            scale: 1;
+        }
+    }
+  
+  
 </style>
