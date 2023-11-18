@@ -1,4 +1,14 @@
-<section class="flex flex-col justify-evenly items-center h-[100vh] mt-5 md:mt-0 md:p-0 md:w-[80%] md:mx-auto ">
+<script>
+  const sobremi = document.querySelector('.sobremi')
+
+  setTimeout(() => {
+
+    sobremi.classList.add('showsobremi')
+      
+  },200);
+</script>
+
+<section class="sobremi opacity-0 flex flex-col justify-evenly items-center h-[100vh] mt-5 md:mt-0 md:p-0 md:w-[80%] md:mx-auto ">
 
   <h2 class=" text-center p-5 text-3xl">SOBRE MI</h2>
   <article class="  w-full flex flex-col justify-center gap-10 items-center lg:flex-row">
@@ -36,5 +46,9 @@
         -moz-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
         box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
 		background: linear-gradient(122deg, rgb(47, 255, 0) 31%, rgb(255, 200, 0) 68%); 
+  }
+  .showsobremi{
+    transition: all .8s ease-in-out;
+    opacity: 100%;
   }
 </style>

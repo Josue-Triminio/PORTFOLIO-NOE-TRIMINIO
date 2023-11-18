@@ -1,9 +1,19 @@
+<script>
+    const skills = document.querySelector('.skills')
+    const h2_skills = document.querySelector('.h2_skills')
+
+    setTimeout(() => {
+
+        skills.classList.add('showsection')
+        h2_skills.classList.add('showsection')
+        
+    },600);
+</script>
 
 
 
-
-<h2 class="text-4xl p-10 text-center">MIS CONOCIMIENTOS</h2>
-<section class="flex justify-around md:w-[80%] md:mx-auto ">
+<h2 class="h2_skills opacity-0 text-2xl p-20 text-center border-b md:text-4xl">MIS CONOCIMIENTOS 👨🏻‍💻</h2>
+<section class="skills opacity-0 flex justify-around md:w-[80%] md:mx-auto ">
     <section class="w-[95%] mx-auto p-5  md:w-auto md:m-0">
        <div class="flex  flex-col flex-wrap shadow rounded-md p-5">
             <div class="flex justify-center items-center gap-10 p-5 ">
@@ -11,7 +21,7 @@
                 <img src="/img/icons/css.svg" class="w-12" alt="icono css">
                 <img src="/img/icons/javascript.svg" class="w-12" alt="icono javascript">
             </div>
-            <div class="flex flex-wrap item-center gap-10 p-5 border-t">
+            <div class="flex flex-wrap item-center justify-center gap-10 p-5 border-t">
                 <img src="/img/icons/react.svg" class="w-12" alt="icono react">
                 <img src="/img/icons/vite.svg" class="w-12" alt="icono vite">
                 <img src="/img/icons/next.svg" class="w-12" alt="icono next">
@@ -20,10 +30,10 @@
                 <img src="/img/icons/sass.svg" class="w-12" alt="icono sass">
                 <img src="/img/icons/bootstrap.svg" class="w-12" alt="icono bootstrap">
                 <img src="/img/icons/material.svg" class="w-12" alt="icono material">
-                <img src="/img/icons/git.svg" class="w-18" alt="icono git">
+                <img src="/img/icons/git.svg"  alt="icono git">
                 <img src="/img/icons/github.svg" class="w-12" alt="icono github">
             </div>
-            <div class="flex flex-wrap item-center gap-10 p-5 border-t">
+            <div class="flex flex-wrap item-center justify-center gap-10 p-5 border-t">
                 <img src="/img/icons/node.svg" class="w-12" alt="icono node">
                 <img src="/img/icons/mysql.svg" class="w-12" alt="icono mysql">
                 <img src="/img/icons/mongo.svg" class="w-18" alt="icono mongo">
@@ -36,6 +46,7 @@
         <p class="text-xl font-semibold">Estos son los conocimientos que e obtenido en el transcurso de mi aprendizaje.</p>
         <p><span class="font-semibold">Conocimientos base:</span> HTML, CCSS y JAVASCRIPT.</p>
         <p><span class="font-semibold">Librerias y frameworks:</span> ASTRO, REACT, NEXT, VITE, TAILWIND y SASS .</p>
+        <p><span class="font-semibold">Entornos y Bases de datos:</span> NODE_JS, MYSQL, MONGODB, STRAPI .</p>
         <p><span class="font-semibold">Conocimientos adicionales:</span> INFORMATICA, AFFINITY PHOTO,  AFFINITY DESIGNER, PHOTOSHOP, ILLUSTRATOR  .</p>
     </section>
 </section>
@@ -44,8 +55,8 @@
 
 
 <style>
-    .show{
-        transition: all .4s ease;
-        opacity: 1;
+    .showsection{
+       transition: all .8s ease-in-out;
+       opacity: 100%;
     }
 </style>

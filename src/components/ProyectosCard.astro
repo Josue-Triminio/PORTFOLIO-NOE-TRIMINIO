@@ -1,12 +1,18 @@
 
+<script>
+    const proyects=document.querySelector('.proyects')
+
+    setTimeout(() => {
+        proyects.classList.add('showproyects')
+    },100);
+</script>
 
 
 
 
 
-
-<h2 class="text-center text-2xl font-semibold mt-10 md:m-10 ">GALERIA DE PROYECTOS</h2>
-<section class=" p-8 flex flex-col flex-wrap items-center justify-center gap-10  lg:flex-row ">
+<h2 class=" text-center text-2xl font-semibold mt-10 md:m-10 ">GALERIA DE PROYECTOS 🧑🏻‍🏭</h2>
+<section class="proyects opacity-0 p-8 flex flex-col flex-wrap items-center justify-center gap-10  lg:flex-row ">
     <div class="card_proyects p-2 w-80 h-96 lg:w-[30rem] lg:h-[25rem] rounded-xl flex flex-col items-center justify-center bg-white">
         <div class="card_img h-[35rem] w-[100%] rounded-t-xl border-b">
         </div>
@@ -118,7 +124,17 @@
         -webkit-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
         -moz-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
         box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
+        transition-property: scale;
+        transition-duration: .3s;
     }
-   
+    .link:hover{
+        scale: 1.2;
+    }
+
+   .showproyects{
+        transition: all .3s ease-in-out;
+        opacity: 100%;
+   }
+
   
 </style>

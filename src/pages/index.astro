@@ -4,10 +4,16 @@ import Stack from '../components/Stack.astro';
 import Titulo from '../components/Titulo.astro';
 
 ---
+<script>
+	const main=document.querySelector('.main_section');
+	setTimeout(() => {
+		main.classList.add('show_main')
+	},100);
+</script>
 
 <Layout title="PORTFOLIO NOE TRIMINIO.">
 	<main>
-	<section class="main_section flex flex-col items-center  p-1 flex-wrap w-[85%] h-[30rem]  mx-auto rounded-md md:w-[80%] mt-10 ">
+	<section class="main_section opacity-0 flex flex-col items-center  p-1 flex-wrap w-[85%] h-[30rem]  mx-auto rounded-md md:w-[80%] mt-20">
 		<section class=" flex flex-col justify-evenly w-[99%]  md:w-[99.5%] h-[99.5%] p-4  bg-[#273036] text-white  text-xl rounded-md ">
 			
 			<div class="flex flex-wrap  items-center gap-10 ">
@@ -19,8 +25,8 @@ import Titulo from '../components/Titulo.astro';
 				</div>
 			</div>
 			<div class="flex gap-8 w-full md:w-auto justify-center">
-				<a class="mt-5 text-sm p-2 bg-white text-[#273036] md:p-1 rounded-md" href="/proyectos">Mis Proyectos</a>
-				<a class="mt-5 text-sm p-2 bg-white text-[#273036] md:p-1 rounded-md" href="/sobremi">Mas sobre mi</a>
+				<a class="links mt-5 text-sm p-1 bg-white text-[#273036] md:p-2 md:text-lg rounded-md" href="/proyectos">Mis Proyectos</a>
+				<a class="links mt-5 text-sm p-1 bg-white text-[#273036] md:p-2 md:text-lg rounded-md" href="/sobremi">Mas sobre mi</a>
 			</div>
 		</section>
 	</section>
@@ -40,5 +46,18 @@ import Titulo from '../components/Titulo.astro';
         box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
 		background: linear-gradient(122deg, rgb(47, 255, 0) 31%, rgb(255, 200, 0) 68%); 
 	}
+	.links{
+		transition-property: scale;
+		transition-duration: .3s;
+	}
+	.links:hover{
+		scale: 1.1;
+	}
+
+	.show_main{
+		opacity: 100%;
+		transition: all .3s ease-in-out;
+	}
+
 </style>
 	
