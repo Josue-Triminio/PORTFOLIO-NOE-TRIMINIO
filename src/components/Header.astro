@@ -1,28 +1,24 @@
----
-import Titulo from "./Titulo.astro"
 
----
-
-<script>import { sequence } from "astro:middleware"
-
-    const btn_menu = document.querySelector('.btn_menu')
-    const nav = document.querySelector('.nav')
+<script>
+    const btn_menu=document.querySelector('.btn_menu')
+    const nav=document.querySelector('.nav')
     const nav_ul=document.querySelector('.nav_ul')
     const btn_menu2=document.querySelector('.btn_menu2')
-    const redes=document.querySelector('.redes')
-    
+
 
     btn_menu.addEventListener('click',()=>{
-        nav.classList.toggle('w-[65%]')
-        nav.classList.toggle('lg:w-[25%]')
+        nav.classList.add('w-[70%]')
         nav_ul.classList.add('opacity-[100%]')
-        btn_menu2.classList.add('opacity-100')
+        btn_menu2.classList.add('opacity-[100%]')
     })
-  
-
+    
 </script>
 
-<header class="header p-4 w-full bg-gray-100 sticky top-0 flex justify-between items-center flex-wrap z-50">
+
+
+
+
+<header class="header p-5 w-full bg-gray-100 sticky top-0 flex justify-between items-center flex-wrap z-50 shadow-sm md:p-3">
     <div class=" flex justify-center items-center gap-5 md:gap-10 ">
 		<a href="https://github.com/Josue-Triminio" target="_blank" rel="noopener noreferrer" class="social">
 			<img src="/img/icons/github.svg" class="w-8" alt="icono github">
@@ -34,9 +30,20 @@ import Titulo from "./Titulo.astro"
 			<img src="/img/icons/facebook.svg" class="w-8" alt="icono facebook">
 		</a>
 	</div>
+    <section class="hidden lg:flex gap-20 text-sm lg:mr-24">
+        <div class="rounded-2xl header_links">
+                <a class="bg-gray-100 rounded-2xl p-[2px] w-[98%] h-[98%]" href="/">Inicio</a>
+        </div>
+        <div class="rounded-2xl header_links">
+                <a class="bg-gray-100 rounded-2xl p-[2px] w-[98%] h-[98%]" href="/proyectos">Proyectos</a>
+        </div>
+        <div class="rounded-2xl header_links">
+                <a class="bg-gray-100 rounded-2xl p-[2px] w-[98%] h-[98%]" href="/sobremi">Sobre Mi</a>
+        </div>
+    </section>
     
-    <button class="btn_menu mr-5 md:mr-10 flex items-center gap-3">
-        <p class=" font-bold text-xl text-black">MENU</p>
+    <button class="btn_menu mr-5 md:mr-10 flex items-center gap-3 lg:hidden">
+        <p class=" font-medium text-lg text-black">MENU</p>
         <svg xmlns="http://www.w3.org/2000/svg" class=" w-[3rem] lg:w-[3rem]" fill="black" class="bi bi-list" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
           </svg>
@@ -56,8 +63,22 @@ import Titulo from "./Titulo.astro"
     .social:hover{
         scale: 1.2;
         transition-duration: .3s;
+        
+        
     }
     
+    .header_links{
+        transition: scale .1s ease;
+        padding: 1px;
+    }
+    .header_links:hover{
+        transition: scale .1s ease;
+        scale: 1.2;
+        transition: all .3s ease-in-out;
+		background: rgba(255, 0, 247, 0.403);
+   		background: linear-gradient(122deg, rgb(255, 0, 247) 35%, rgb(0, 176, 234) 68%); 
+        
+    }
    
    
 </style>

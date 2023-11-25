@@ -19,9 +19,9 @@
 
 
 
-<div class=" w-full">
-    <a href="/" rel="noopener noreferrer"><h1 class="mb-3 cursor-pointer font-[900] text-5xl w-full text-center lg:text-8xl text-[#273036]"> NOE TRIMINIO</h1></a>
-    <h2 class="w-[70%] mx-auto subtitulo font-[600] text-2xl  text-center md:text-3xl lg:text-5xl opacity-0">WEB DEVELOPER</h2>
+<div class=" w-full relative">
+    <a href="/" rel="noopener noreferrer"><h1 class="mb-3 cursor-pointer font-[900] text-[2.5em] w-full text-center lg:text-8xl text-[#273036] md:text-5xl"> NOE TRIMINIO</h1></a>
+    <h2 class="subtitulo reboteMd font-[600] w-full text-[1.2em]  text-center md:text-3xl lg:text-5xl opacity-0 absolute top-5">WEB DEVELOPER</h2>
 </div>
 
 
@@ -33,14 +33,64 @@
     background: linear-gradient(122deg, rgb(255, 0, 247) 35%, rgb(0, 176, 234) 68%); 
     background-clip: text;
     transition-property:background,color,text;
-    transition-duration: .4s;
+    transition-duration: .2s;
 }
+
+@media(min-width:320px){
+   .reboteMd{
+    animation: reboteMd .8s 1s both ease-in-out;
+   }
+
+   @keyframes reboteMd {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    60%{
+        transform: translateY(44px);
+    }
+    70%{
+        transform: translateY(48px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+   
+}
+}
+@media(min-width:1180px){
+    .subtitulo{
+        animation: rebote .5s 1s both ease-in-out;
+    }
+    @keyframes rebote{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(90px);
+    }
+    60%{
+        transform: translateY(84px);
+    }
+    70%{
+        transform: translateY(88px);
+    }
+    100%{
+        transform: translateY(90px);
+    }
+   
+}
+}
+
 .show2{
     opacity: 1;
     transition-delay: 1s;
     transition-property: all;
     transition-timing-function: ease-in-out;
     transition-duration: .4s;
+    
 
 }
 

@@ -12,24 +12,25 @@ import Titulo from '../components/Titulo.astro';
 </script>
 
 <Layout title="PORTFOLIO NOE TRIMINIO.">
-	<main>
+	<main class="max-w-[85%]  md:max-w-[70%] mx-auto">
 	<section class="main_section opacity-0 flex flex-col items-center  p-1 flex-wrap   mx-auto rounded-md mt-10">
+		<img src="/img/milogo.webp" class="w-[8rem] shadow-xl md:w-62 rounded-full p-0"  alt="Logotipo noe triminio">
 		<Titulo />
-		<section class=" flex flex-col justify-evenly p-4 text-[#273036] text-xl mt-20 ">
-			
+		<section class="max-w[100%] mx-auto flex flex-col justify-evenly p-2 text-[#273036] mt-8 md:mt-20 "> 
 			<div class="flex flex-col items-center gap-6 md:flex-row">
-				<img src="/img/milogo.webp" class="w-60 shadow-xl md:w-72"  alt="Logotipo noe triminio">
 				<div class="flex flex-col justify-center ">
-					
-					<p>Soy Noe Triminio desarrollador de sitios y paginas web.</p>
-					<p>Tengo como objetivo aplicar mis conocimientos para brindar soluciones</p>
-					<p>Que puedan contribuir al exito de cualquier proyecto</p>
-					<p>Si necesitas un profesional que aporte lo que requieren tus proyectos contacta conmigo</p>
+					<p class="text-[1.2em]">
+						Soy Noe Triminio desarrollador de sitios y paginas web.
+						si necesitas un profesional que lleve tus proyectos al exito contactame sera un placer trabajar contigo.
+					</p>
 					<p class=" font-semibold text-center md:text-left">WEB IS POWERFULL <span class="text-4xl">🚀</span></p>
-					
 					<div class="flex gap-16 w-full md:w-auto justify-center md:mt-16">
-						<a class="links mt-5 text-sm p-1 text-white bg-[#273036] md:p-2 md:text-xl shadow-lg rounded-md" href="/proyectos">Mis Proyectos</a>
-						<a class="links mt-5 text-sm p-1 text-white bg-[#273036] md:p-2 md:text-xl shadow-lg rounded-md" href="/sobremi">Mas sobre mi</a>
+						<div class="hovers flex justify-center items-center  mt-5 rounded-md p-[.1rem] links">
+							<a class="flex items-center justify-center  h-[3rem]  text-[.8em] p-[.7rem] text-white bg-[#273036] md:p-2 md:text-xl shadow-lg rounded-md" href="/proyectos">Mis Proyectos</a>
+						</div>
+						<div class="hovers flex justify-center items-center  mt-5 rounded-md p-[.1rem] links">
+							<a class="flex items-center justify-center  h-[3rem]  text-[.8em] p-[.7rem] text-white bg-[#273036] md:p-2 md:text-xl shadow-lg rounded-md" href="/sobremi">Mas sobre mi</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -55,6 +56,12 @@ import Titulo from '../components/Titulo.astro';
 	.show_main{
 		opacity: 100%;
 		transition: all .3s ease-in-out;
+	}
+	.hovers:hover{
+		transition: all .3s ease-in-out;
+		background: rgb(255, 0, 247,);
+   		background: linear-gradient(122deg, rgb(255, 0, 247) 35%, rgb(0, 176, 234) 68%); 
+		
 	}
 
 
