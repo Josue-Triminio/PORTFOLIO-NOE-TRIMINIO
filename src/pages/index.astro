@@ -12,18 +12,17 @@ import Titulo from '../components/Titulo.astro';
 </script>
 
 <Layout title="PORTFOLIO NOE TRIMINIO.">
-	<main class="max-w-[85%]  md:max-w-[70%] mx-auto">
+	<main class="max-w-[85%]  md:max-w-[75%] mx-auto">
 	<section class="main_section opacity-0 flex flex-col items-center  p-1 flex-wrap   mx-auto rounded-md mt-10">
-		<img src="/img/milogo.webp" class="w-[8rem] shadow-md md:w-62 rounded-full p-0"  alt="Logotipo noe triminio">
+		<img src="/img/milogo.webp" class="w-[8rem] shadow-md md:w-[14rem] rounded-full p-0 bg-white"  alt="Logotipo noe triminio">
 		<Titulo />
 		<section class="max-w[100%] mx-auto flex flex-col justify-evenly p-2 text-[#273036] mt-8 md:mt-20 "> 
 			<div class="flex flex-col items-center gap-6 md:flex-row">
 				<div class="flex flex-col justify-center ">
-					<p class="text-[1.2em]">
+					<p class="parrafo text-[1.2em] lg:text-[1.7em] md:w-[65%] mx-auto shadow-md p-4 bg-white rounded-md">
 						Soy Noe Triminio desarrollador de sitios y paginas web.
 						si necesitas un profesional que lleve tus proyectos al exito contactame sera un placer trabajar contigo.
 					</p>
-					<p class=" font-semibold text-center md:text-left">WEB IS POWERFULL <span class="text-4xl">🚀</span></p>
 					<div class="flex gap-16 w-full md:w-auto justify-center md:mt-16">
 						<div class="hovers flex justify-center items-center  mt-5 rounded-md p-[.1rem] links">
 							<a class="flex items-center justify-center  h-[3rem]  text-[.8em] p-[.7rem] text-white bg-[#273036] md:p-2 md:text-xl shadow-lg rounded-md" href="/proyectos">Mis Proyectos</a>
@@ -63,6 +62,10 @@ import Titulo from '../components/Titulo.astro';
 		background: rgb(255, 0, 247,);
    		background: linear-gradient(122deg, rgb(255, 0, 247) 35%, rgb(0, 176, 234) 68%); 
 		
+	}
+
+	.parrafo{
+		text-wrap: pretty;
 	}
 	
 
