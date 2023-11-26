@@ -14,20 +14,20 @@
 </script>
 
 
-<nav class="nav fixed top-0 right-0 z-50 w-0 h-full bg-[#273036] flex flex-col text-white">
+<nav class="nav fixed top-0 right-0 z-50 w-0 h-full bg-[#ffffff9e] flex flex-col text-black shadow-xl">
     <button class="btn_menu2 w-full flex justify-end p-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
             <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
           </svg>
     </button>
 
-    <ul class="nav_ul flex flex-col items-center h-[30%] w-[80%] mx-auto gap-10 text-lg mt-10 opacity-0 ">
+    <ul class="nav_ul flex flex-col items-center h-[30%] w-[80%] mx-auto gap-10 text-lg mt-10 opacity-0 font-semibold">
         <li class="nav_link"><a href="/"> INICIO</a></li>
         <li class="nav_link"><a href="/sobremi">SOBRE MI</a></li>
         <li class="nav_link"><a href="/proyectos">PROYECTOS</a></li>
     </ul>
 
-    <div class="contacto mt-5 xt-lg h-[30%] w-[80%] mx-auto">
+    <div class="contacto mt-5 xt-lg h-[30%] w-[80%] mx-auto font-semibold">
         <h3 class=" text-center text-lg">CONTACTO</h3>
        <div class=" flex items-center h-full w-full">
             <a  class="nav_link mx-auto" href="https://github.com/Josue-Triminio" target="_blank" rel="noopener noreferrer">
@@ -51,6 +51,7 @@
 <style>
     .nav{
         transition: all .4s ease;
+        backdrop-filter: blur(8px);
     }
     .nav_ul{
         border-bottom: 1px solid gray;

@@ -18,7 +18,7 @@
 
 
 
-<header class="header p-5 w-full bg-white sticky top-0 flex justify-between items-center flex-wrap z-50 shadow-sm md:p-3">
+<header class="header p-5 w-full sticky top-0 flex justify-between items-center flex-wrap z-50 shadow md:p-3">
     <div class=" flex justify-center items-center gap-5 md:gap-10 ">
 		<a href="https://github.com/Josue-Triminio" target="_blank" rel="noopener noreferrer" class="social">
 			<img src="/img/icons/github.svg" class="w-8" alt="icono github">
@@ -30,7 +30,7 @@
 			<img src="/img/icons/facebook.svg" class="w-8" alt="icono facebook">
 		</a>
 	</div>
-    <section class="hidden lg:flex gap-20 text-[1.2em] lg:mr-24">
+    <section class="hidden lg:flex gap-20 text-[.9em] lg:mr-24">
         <div class="rounded-2xl header_links">
                 <a class="rounded-md p-[2px] w-[98%] h-[98%]" href="/">Inicio</a>
         </div>
@@ -56,6 +56,8 @@
 <style>
     header{
         transition: all .3s ease;
+        background: rgba(255, 255, 255, 0.538);
+        backdrop-filter: blur(10px);
     }
     .social{
         transition: scale .1s ease;

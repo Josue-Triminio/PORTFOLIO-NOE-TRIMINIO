@@ -6,6 +6,7 @@ interface Props {
 const { title } = Astro.props;
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
+
 ---
 
 <!doctype html>
@@ -23,8 +24,8 @@ import Nav from '../components/Nav.astro';
 		<meta name="description" content="portfolio web developer-javascript portafolio">
 		<title>{title}</title>
 	</head>
-	<body class=" bg-gray-100 relative text-[#273036] ">
-
+	<body>
+		
 		<Header />
 		<Nav />
 		<slot />
@@ -34,11 +35,10 @@ import Nav from '../components/Nav.astro';
 
 <style is:global>
 	body{
+		position: relative;
 		font-family: 'Montserrat', sans-serif;
 		background-image: url(/img/fondo.webp);
 		background-size: cover;
-		background-repeat: no-repeat;
-		
 	}
 	p{
 		font-weight: 200;
