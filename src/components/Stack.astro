@@ -1,21 +1,11 @@
-<script>
-    const skills = document.querySelector('.skills')
-    const h2_skills = document.querySelector('.h2_skills')
-
-    setTimeout(() => {
-
-        skills.classList.add('showsection')
-        h2_skills.classList.add('showsection')
-        
-    },600);
-</script>
 
 
 
-<h2 class="h2_skills opacity-0 text-2xl p-5 w-full mx-auto mt-10 text-center border-b md:text-4xl md:mt-32 font-semibold">CONOCIMIENTOS </h2>
-<section class="skills opacity-0 flex justify-around  gap-5 md:flex-col lg:flex-row">
-    <section class=" mt-1 md:w-auto md:mb-16 bg-white">
-       <div class="flex  flex-col flex-wrap rounded-md p-5 shadow-lg bg-white ">
+
+<h2 class="h2_skills  text-xl p-5 w-full mx-auto  text-center  md:text-xl md:mt-10 ">My Stack</h2>
+<section class="skills  flex justify-around  gap-5 md:flex-col lg:flex-row p-5 mb-20">
+    <section class=" mt-1 md:w-auto md:mb-16">
+       <div class="flex  flex-col flex-wrap rounded-md p-5  ">
             <div class="flex justify-center items-center gap-10 p-2 md:p-5 ">
                 <img src="/img/icons/html.svg" class="w-7 md:w-12" alt="icono html">
                 <img src="/img/icons/css.svg" class="w-7 md:w-12" alt="icono css">
@@ -52,15 +42,12 @@
 
 <style>
   
-    .showsection{
-       transition: all .8s ease-in-out;
-       opacity: 100%;
-    }
+   
 
     .skills{
         animation: fade linear both;
         animation-timeline: view();
-        animation-range: entry 10% cover 30%;
+        animation-range: entry 10% cover 20%;
     }
 
     @keyframes fade {

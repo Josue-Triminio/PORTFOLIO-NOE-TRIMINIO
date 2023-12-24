@@ -1,85 +1,32 @@
-<script>
-  const sobremi = document.querySelector('.sobremi')
+---
+import Redes from "./Redes.astro";
+---
 
-  setTimeout(() => {
 
-    sobremi.classList.add('showsobremi')
-      
-  },200);
-</script>
-
-<section class="sobremi opacity-0 flex flex-col justify-evenly items-center  mt-10 md:mt-8 md:p-0 md:w-[80%] md:mx-auto ">
-
-  <article class="  w-full flex flex-col justify-center gap-10 items-center lg:flex-row">
-    <div>
-      <div class=" rounded-full p-1 bg-white shadow-md aspect-video">
-        <img src="/img/avatar.svg" class="w-60 rounded-full md:w-80 " alt="imagen de noe triminio ">
-      </div>
-      <h2 class=" text-center text-3xl font-semibold p-4">SOBRE MI</h2>
+  <article class="flex flex-col md:flex-row gap-5 mt-8 md:mt-28
+          justify-evenly items-center w-[90%] md:w-[80%]
+          mx-auto p-5 bg-black rounded-xl">
+    <img
+    src="img/banner.webp"
+    class="max-h-40 max-w-32 md:-max-w-52
+    md:max-h-72 lg:max-w-80 lg:max-h-96"
+    alt="foto de noe.webp"
+    />
+    <section class="flex flex-col gap-3 text-sm lg:text-md text-white w-full">
+    <h4 class=" font-bold text-2xl">SOBRE <span class="text-[#FF0049]">MI</span></h4>
+    <p>Mi nombre es <span class="font-semibold">Noe</span> y es un placer presentarme contigo.</p>
+    <p>Soy un chico sociable disfruto de la compañia de familiares, amigos o compañeros de trabajo.</p>
+    <p>Soy musico y me gusta cantar tocando mi guitarra.</p>
+    <p>Siempre estoy dispuesto para ayudar a quien lo necesite.</p>
+    <p>Me gusta el aprendizaje sobre multitud de temas como tecnologia, arte, musica, politica y deportes.</p>
+    <div class="mx-auto p-8">
+    <Redes />
     </div>
-      <div class="fondo w-[95%] md:w-auto p-1 rounded-md flex flex-col bg-white">
-        <a href="/" rel="noopener noreferrer">
-          <img src="/img/milogo.webp" class="w-32" alt="logotipo noe">
-        </a>
-        <div class="parrafo_sobremi p-5 flex flex-col justify-center md:text-lg  text-black border-t w-[99%] md:w-auto ">
-          <p>Mi nombre es <span class="font-semibold">Noe Triminio</span> y es un placer presentarme contigo.</p>
-          <p>Soy un chico sociable disfruto de la compañia de familiares, amigos o compañeros de trabajo.</p>
-          <p>Me gusta el futbol y los videojuegos principalmemte los shooters.</p>
-          <p>Tambien soy musico y me gusta cantar tocando mi guitarra.</p>
-          <p>Siempre estoy dispuesto para ayudar a quien lo necesite nunca dejo a nadie sin mi ayuda</p>
-          <p>Ya que yo tambien suelo pedir ayuda o consejos cuando no se sobre algun tema o asunto.</p>
-          <p>Me gusta el aprendizaje sobre multitud de temas como tecnologia, arte, musica, politica, deportes y otros mas.</p>
-        </div>
-        <h3 class=" font-semibold">CERTIFICACIONES</h3>
-        <div class="flex flex-wrap">
-          <a href="https://skillshop.exceedlms.com/student/award/yEPG6ucPHEK1jGwXAQQtobCE" class="p-5"target="_blank" rel="noopener noreferrer">
-            <img src="/img/icons/google.svg" width="40" class="certificado" alt="icono de google">
-            <p>HTML5</p>
-          </a>
-          <a href="https://skillshop.exceedlms.com/student/award/csuJDaskgb6EjkCrPHD8T8Cg" class="p-5" target="_blank" rel="noopener noreferrer">
-            <img src="/img/icons/google.svg" width="40" class="certificado" alt="icono de google">
-            <p>CSS3</p>
-          </a>
-          <a href="https://www.udemy.com/certificate/UC-ab866e32-0d0e-4b44-bc18-8b4ca49abb85/" class="p-5" target="_blank" rel="noopener noreferrer">
-            <img src="/img/icons/udemy.svg" width="85" class="certificado mt-2" alt="icono de udemy">
-            <p>JAVASCRIPT</p>
-          </a>
-          <a href="https://www.udemy.com/certificate/UC-da444aa8-50a8-4b42-865b-37029d6a02b5/" class="p-5" target="_blank" rel="noopener noreferrer">
-            <img src="/img/icons/udemy.svg" width="85" class="certificado mt-2" alt="icono de udemy">
-            <p>REACT MENRN</p>
-          </a>
-        </div>
-      </div>
+    </section>
   </article>
-</section>
 
 
 
-<style>
-  .fondo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-        -moz-box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-        box-shadow: 0px 1px 9px -4px rgba(66, 68, 90, 1);
-	
-  }
-  .showsobremi{
-    transition: all .8s ease-in-out;
-    opacity: 100%;
-  }
 
-  .certificado{
-    transition: scale .1s ease-in-out;
-  }
 
-  .certificado:hover{
-    scale: 1.3;
-    transition-duration: .3s;
-  }
 
-  .parrafo_sobremi{
-    text-wrap: pretty;
-  }
-</style>
