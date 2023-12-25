@@ -12,23 +12,25 @@ import Redes from "../components/Redes.astro";
     >
       <img
         src="img/banner.webp"
-        class="img_section max-h-40 max-w-32 md:-max-w-52 md:max-h-72 lg:max-w-80 lg:max-h-96 z-20 lg:mr-20"
+        class="img_section max-h-32 max-w-32 md:-max-w-52 md:max-h-72 lg:max-w-72 lg:max-h-80 z-20 lg:mr-20"
         alt="foto de noe.webp"
       />
      <div class="flex flex-col justify-center items-center gap-10">
       <Titulo />
-      <div class="hidden lg:block">
-        <Redes />
-      </div>
      </div>
     </section>
-    <article class=" lg:w-[50%] text-xs  p-2 mt-5 rounded-lg mx-auto md:max-w-[70%] md:text-sm">
+    <article class=" lg:w-[60%] text-xs font-semibold p-2  rounded-lg mx-auto md:max-w-[70%] md:text-sm">
       <h4 class="text-center text-xl p-10">MIS SERVICIOS</h4>
       <div class="flex flex-col justify-center border rounded-2xl p-5 gap-2">
-        <p>Lleva tus proyectos al siguiente nivel con el uso de las tecnologias mas robustas y populares.</p>
-        <p>Algunos de mis servicios incluyen creacion  mantenimiento y soporte de sitios y paginas web.</p>
-        <p>Pra mas informacion puedes contar conmigo contactame en mis redes sociales o descarga mi cv.</p>
+        
+        <p>Lleva tus proyectos al siguiente nivel con el uso de las tecnologías más robustas y populares.</p>
+        <p>Algunos de mis servicios incluyen creación,  mantenimiento y soporte de sitios y páginas web.</p>
+        <p>Para más información contáctame en mis redes sociales.</p>
+        <div class="flex items-end justify-end">
+          <Redes color="black" />
+        </div>
       </div>
+     
     </article>
   </main>
   <Stack />

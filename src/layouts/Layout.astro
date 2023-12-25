@@ -4,9 +4,10 @@ interface Props {
 }
 
 const { title } = Astro.props;
+//import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
+
 
 
 ---
@@ -24,15 +25,14 @@ import Footer from '../components/Footer.astro';
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700;900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="portfolio web developer-javascript portafolio">
+		<script src="../js/menu.js"></script>
 		<title>{title}</title>
 		
 	</head>
 	<body>
-		
 		<Header />
 		<Nav />
 		<slot />
-		<Footer />
 	</body>
 </html>
 
