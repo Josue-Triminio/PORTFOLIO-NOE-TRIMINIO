@@ -4,7 +4,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import { ViewTransitions } from 'astro:transitions';
 import Header from '../components/Header.astro';
 import Nav from '../components/Nav.astro';
 
@@ -31,7 +30,7 @@ import Nav from '../components/Nav.astro';
 	</head>
 	<body>
 		<Header />
-		<Nav client:visible/>
+		<Nav />
 		<slot />
 	</body>
 </html>
