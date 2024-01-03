@@ -29,9 +29,14 @@ import Nav from '../components/Nav.astro';
 		
 	</head>
 	<body>
-		<Header />
-		<Nav />
-		<slot />
+	<div class="relative h-full w-full bg-white"><div class="-z-10 absolute h-[100vh] w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+	
+	</div>
+	<Header />
+	<Nav />
+	<slot />
+
+		
 	</body>
 </html>
 
