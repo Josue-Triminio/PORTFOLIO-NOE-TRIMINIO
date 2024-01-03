@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Stack from "../components/Stack.astro";
 import Titulo from "../components/Titulo.astro";
 import Redes from "../components/Redes.astro";
+import Buttons from "../components/Buttons.astro";
 ---
 
 <Layout title="PORTFOLIO NOE TRIMINIO.">
@@ -18,12 +19,16 @@ import Redes from "../components/Redes.astro";
      </div>
     </section>
     <h4 class="text-center text-xl p-10 font-semibold">MIS SERVICIOS</h4>
-    <article class=" lg:w-[60%] text-xs font-semibold  shadow  rounded-2xl mx-auto md:max-w-[70%] md:text-sm bg-white">
-      <div class="flex flex-col justify-center border rounded-2xl p-5 gap-2">
+    <article class="max-w-[95%] lg:w-[60%] text-xs font-semibold  shadow  rounded-2xl mx-auto md:max-w-[70%] md:text-sm bg-white">
+      <div class="flex flex-col justify-center border rounded-2xl p-5 gap-2 ">
         <p>Lleva tus proyectos al siguiente nivel con el uso de las tecnologías más robustas y populares.</p>
         <p>Algunos de mis servicios incluyen creación,  mantenimiento y soporte de sitios y páginas web.</p>
         <p>Para más información contáctame en mis redes sociales.</p>
-        <div class="flex items-end justify-end">
+        <div class="flex flex-col items-center justify-end gap-20 lg:flex-wrap">
+          <div class="flex gap-10 mt-8">
+            <Buttons titulo="Mas Sobre Mi" link="/sobremi"/>
+            <Buttons titulo="Proyectos" link="/proyectos"/>
+          </div>
           <Redes color="black" />
         </div>
       </div>
