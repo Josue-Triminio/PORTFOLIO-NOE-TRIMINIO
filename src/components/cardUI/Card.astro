@@ -1,0 +1,55 @@
+---
+interface card{
+    link:string,
+    urlimg:string,
+    altname:string
+}
+const { link, urlimg ,altname,id} = Astro.props;
+---
+
+
+
+
+<div class="card flex flex-nowrap w-full min-h-52 md:h-64 2xl:h-80 relative rounded-xl">
+  <slot /> 
+  <img src={urlimg} alt={altname} class="bg-cover  z-10 ">
+</div>
+
+
+
+
+
+
+<style>
+  .card {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 20%;
+    
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      translate: 20 100px;
+      scale: 0.5;
+      transition: all 0.3s ease-in-out;
+    }
+    100% {
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
+    }
+    
+  }
+
+
+  /*  estilos del card   */ 
+
+  .card {
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+</style>

@@ -1,48 +1,130 @@
 ---
-import Card from "./Card.astro";
+import Card from "./cardUI/Card.astro";
+import ButtonCard from "./cardUI/ButtonCard.astro";
+import BgCard from "./cardUI/BgCard.astro";
 ---
+
 
 <h2 class="text-center text-xl md:text-4xl py-16 font-semibold">
   <span class="font-bold text-[#FF0049]">GALERIA</span> DE PROYECTOS
 </h2>
 
-<article class="mb-10">
-  <section
-    class="flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row pb-10">
-    <Card link="https://crypto-money-com.vercel.app/" urlimg="/img/01.webp">
-      <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
-      <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
-      <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
-    </Card>
-    <Card link="https://guitarla-nextjs-topaz.vercel.app" urlimg="/img/03.webp">
-      <img src="/img/icons/next.svg" width="30" alt="icono next-js" />
-      <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
-      <img src="/img/icons/postgres.svg" width="30" alt="icono postgres" />
-      <img src="/img/icons/strapi.svg" width="30" alt="icono strapi" />
-    </Card>
-    <Card link="https://recetas-free-app.netlify.app" urlimg="/img/05.webp">
-      <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
-      <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
-      <img src="/img/icons/bootstrap.svg" width="30" alt="icono bootstrap-js" />
-    </Card>
-    <Card link="https://nangotara-sl.vercel.app" urlimg="/img/02.webp">
-      <img src="/img/icons/astro.svg" width="30" alt="icono astro" />
-      <img src="/img/icons/javascript.svg" width="30" alt="icono js" />
-      <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
-    </Card>
-    <Card
-      link="https://github.com/Josue-Triminio/Buscador-de-noticias"
-      urlimg="/img/04.webp"
-    >
-      <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
-      <img src="/img/icons/material.svg" width="30" alt="icono material" />
-    </Card>
-    <Card link="https://task-com.vercel.app" urlimg="/img/06.webp">
-      <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
-      <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
-      <img src="/img/icons/redux.svg" width="30" alt="icono redux-js" />
-      <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
-    </Card>
-  </section>
 
+<article class="w-full  xl:w-[75%] grid md:grid-cols-2  lg:grid-rows-2 lg:grid-cols-3  gap-8 py-6 px-4 lg:px-0 text-center ">
+  
+    <Card urlimg="/img/01.webp">
+      <ButtonCard id="btnA" />
+      <BgCard id="cardA">
+        <div class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden  rounded-full p-1">
+          <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
+          <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
+          <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
+        </div>
+        <h2 class="font-lg z-50 uppercase text-center font-bold">cotiza criptomonedas</h2>
+        <div id="descripcion" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Te Muestra los últimos precios, cambios y tendencias de una amplia gama de criptomonedas en tiempo real con la API de Cryptocompare.com asegura datos y precisos actualizados al instante.
+          </p>
+        </div>
+        <a href="https://crypto-money-com.vercel.app/" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+    <Card urlimg="/img/02.webp" id="cardB">
+      <ButtonCard id="btnB" />
+      <BgCard id="cardB">
+        <h2 class="font-bold uppercase text-center">Empresa de reformas</h2>
+        <div id="descripcionB" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Explora las reformas integrales en nuestro sitio web, potenciado por la velocidad de Next.js y el diseño elegante de Tailwind CSS. Descubre la transformación de espacios con nuestra gama de servicios especializados.
+          </p>
+        </div>
+        <div id="descripcionC" class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden p-1">
+          <img src="/img/icons/next.svg" width="30" alt="icono next" />
+          <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
+        </div>
+        <a href="https://nangotara-sl.vercel.app" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+    <Card urlimg="/img/03.webp">
+      <ButtonCard id="btnC" />
+      <BgCard id="cardC">
+        <h2 class="font-bold uppercase text-center">tienda de guitarras</h2>
+        <div id="descripcion3" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Nuestra tienda no solo ofrece guitarras excepcionales, sino una experiencia de compra optimizada. Desde la elección de tu instrumento hasta el pago seguro, la combinación de Next.js, Strapi y PostgreSQL garantiza un viaje sin contratiempos.
+          </p>
+        </div>
+        <div class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden p-1">
+          <img src="/img/icons/next.svg" width="30" alt="icono next-js" />
+          <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
+          <img src="/img/icons/postgres.svg" width="30" alt="icono postgres" />
+          <img src="/img/icons/strapi.svg" width="30" alt="icono strapi" />
+        </div>
+        <a href="https://guitarla-nextjs-topaz.vercel.app" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+    <Card urlimg="/img/04.webp">
+      <ButtonCard id="btnD" />
+      <BgCard id="cardD">
+        <h2 class="font-bold uppercase text-center">buscador de noticias</h2>
+        <div id="descripcionD" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Explora las noticias de una manera elegante y eficiente con nuestro buscador de noticias desarrollado con React y Material-UI, disponible en GitHub. Este proyecto te ofrece una experiencia de usuario intuitiva y visualmente atractiva mientras navegas por las últimas noticias.
+          </p>
+        </div>
+        <div class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden p-1">
+          <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
+          <img src="/img/icons/material.svg" width="30" alt="icono material" />
+        </div>
+        <a href="https://github.com/Josue-Triminio/Buscador-de-noticias" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+    <Card urlimg="/img/05.webp">
+      <ButtonCard id="btnE" />
+      <BgCard id="cardE">
+        <h2 class="font-bold uppercase text-center">recetas de cocteles</h2>
+        <div id="descripcionE" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Descubre un mundo de sabores con nuestro sitio web de recetas de bebidas, impulsado por la velocidad de Vite y la elegancia de React Bootstrap. Explora una colección diversa de recetas, desde cócteles clásicos hasta innovadoras mezclas.
+          </p>
+        </div>
+        <div class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden p-1">
+          <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
+          <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
+          <img src="/img/icons/bootstrap.svg" width="30" alt="icono bootstrap-js" />
+        </div>
+        <a href="https://recetas-free-app.netlify.app" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+    <Card urlimg="/img/06.webp">
+      <ButtonCard id="btnF" />
+      <BgCard id="cardF">
+        <h2 class="font-bold uppercase text-center">task manager</h2>
+        <div id="descripcionF" class="text-sm py-3 md:px-4  opacity-0 transition-all delay-[.3s] duration-[.4s]">
+          <p>
+            Optimiza tu productividad con nuestro Task Manager desarrollado con Vite y gestionado eficientemente por Redux. Este proyecto te proporciona una plataforma ágil para organizar y realizar un seguimiento de tus tareas diarias.
+          </p>
+        </div>
+        <div class="flex gap-3 justify-between items-center absolute bottom-4 overflow-hidden p-1">
+          <img src="/img/icons/vite.svg" width="30" alt="icono vite-js" />
+          <img src="/img/icons/react.svg" width="30" alt="icono react-js" />
+          <img src="/img/icons/redux.svg" width="30" alt="icono redux-js" />
+          <img src="/img/icons/tailwind.svg" width="30" alt="icono tailwind-js" />
+        </div>
+        <a href="https://task-com.vercel.app" target="_blanck" rel="noopener noreferrer" class="absolute bottom-4 right-2 flex items-center gap-2 font-semibold"> 
+          <img src="/img/icons/chrome.svg" width="40" alt="logo chrome" class="animate-pulse">
+        </a>
+      </BgCard>
+    </Card>
+  
 </article>

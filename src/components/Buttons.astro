@@ -1,10 +1,10 @@
 ---
-const {titulo,link}=Astro.props;
+const {titulo,link,clase}=Astro.props;
 ---
 
 
 
 
-<a href={link} class=" cursor-pointer hover:brightness-110 hover:animate-pulse font-bold 
-               py-3 px-6 rounded-full bg-gradient-to-r from-[#FF0049]
-             to-[#1BAFFF] text-white">{titulo}</a>
+<a href={link} class=`${clase} cursor-pointer hover:brightness-110 hover:animate-pulse font-bold 
+               py-3 px-2 rounded-full bg-gradient-to-r from-[#FF0049]
+             to-[#1BAFFF] text-white`>{titulo}</a>

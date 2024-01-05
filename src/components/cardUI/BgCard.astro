@@ -1,0 +1,14 @@
+---
+const {id}=Astro.props
+---
+
+
+
+
+<div  id={id} class="absolute flex flex-col overflow-hidden bg-slate-950 w-0 h-full
+                     z-40 transition-all duration-[.4s] 
+                     rounded-xl text-white ">
+    <div class="w-full p-4">
+        <slot />
+    </div>
+</div>
